@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Wong | Computer Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-container" id="initialLoader">
+        <img src="images/fallTree.gif" alt="loading tree" class="animation">
+        <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- Shoji Doors -->
+    <div class="shoji-door-container" id="shojiWrapper">
+        <div class="door left"></div>
+        <div class="door right"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="landing-page" id="mainContent">
+        
+        <!-- Parallax Background Layers -->
+        <div class="parallax-bg">
+            <div class="parallax-layer bg-mountains" data-speed="0.2"></div>
+            <div class="parallax-layer bg-mist" data-speed="0.3"></div>
+            <div class="parallax-layer bg-trees-far" data-speed="0.4"></div>
+            <div class="parallax-layer bg-trees-mid" data-speed="0.6"></div>
+            <div class="parallax-layer bg-bamboo" data-speed="0.8"></div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="petals-container" id="petalsContainer"></div>
+        
+        <!-- Lanterns -->
+        <div class="floating-lantern left-lantern">🏮</div>
+        <div class="floating-lantern right-lantern">🏮</div>
+
+        <!-- Navigation -->
+        <nav class="main-nav" id="mainNav">
+            <div class="nav-brand">Marcus</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="hero-greeting">Welcome to my</p>
+                <h1 class="hero-title">
+                    <span class="title-line">Portfolio</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Computer Engineering student at Temasek Polytechnic<br>
+                    Bridging hardware and software with creative solutions
+                </p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator">
+                <span class="scroll-text">Scroll</span>
+                <div class="scroll-line"></div>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">About</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <img src="images/profile2.jpg" alt="Marcus Wong" class="profile-img">
+                        </div>
+                    </div>
+                    <div class="about-body">
+                        <h3 class="about-role">Computer Engineering Student</h3>
+                        <div class="about-text">
+                            <p>
+                                My name is Marcus and I am currently a Year 3 Computer Engineering
+                                student at Temasek Polytechnic. My journey—from Common Engineering
+                                to specializing in Computer Engineering—has been driven by a commitment
+                                to mastering both the hardware and software that power our modern world.
+                            </p>
+                            <p>
+                                With a technical foundation spanning from embedded systems to cybersecurity
+                                and IoT, I enjoy the challenge of solving multi-disciplinary problems. Whether
+                                I am architecting a secure network or developing efficient software solutions,
+                                my goal is to build technology that is resilient, intuitive, and impactful. I am
+                                currently seeking opportunities to apply my diverse skill set to meaningful projects
+                                while continuing to explore the vast landscape of engineering.
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section experience" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+
+        <div class="timeline">
+            <!-- Overseas Internship - Featured -->
+            <div class="timeline-item featured">
+                <div class="timeline-marker">
+                    <i class="ri-plane-line"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h4 class="timeline-title">Overseas Internship</h4>
+                        <span class="timeline-date">May 2025 - Aug 2025</span>
+                    </div>
+                    <p class="timeline-company">Fukuoka Institute of technology, Japan</p>
+                    <p class="timeline-desc">
+                        Gained hands-on experience in IoT. Proposed and worked on control panel 
+                        to improve User Interface (UI) and User Experience (UX), implenting features and overall
+                        improvements to the system
+                    </p>
+                    <ul class="achievement-list">
+                        <li><i class="ri-check-line"></i> Redesigned control panel using React instead of current html,css,js</li>
+                        <li><i class="ri-check-line"></i> Improved overall look and added meaningful tracking</li>
+                        <li><i class="ri-check-line"></i> Participated In Osaka Expo 2025</li>
+                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">IoT</span>
+                        <span class="skill-tag">Frontend development</span>
+                        <span class="skill-tag">Backend development</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Project -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <i class="ri-projector-line"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h4 class="timeline-title">Major Project - Anti-theft detterence system</h4>
+                        <span class="timeline-date">Oct 2025 - Feb 2026</span>
+                    </div>
+                    <p class="timeline-company">Temasek Polytechnic</p>
+                    <p class="timeline-desc">
+                        Enhance an existing AI-based Anti-Theft Deterrence System for supermarket self-checkout
+                        counters by improving its functionality, reliability, and regulatory compliance.
+                    </p>
+                    <ul class="achievement-list">
+                        <li><i class="ri-check-line"></i> Redesigned system interface with tkinter</li>
+                        <li><i class="ri-check-line"></i> Implemented Blackbox feature for PDPA compliance</li>
+                        <li><i class="ri-check-line"></i> Improved the accuracy and robustness of the AI detection models for real-time identification</li>
+                        <li><i class="ri-check-line"></i> Achieve stable end to end Integration of the system</li>
+                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Iot, Hardware</span>
+                        <span class="skill-tag">MQTT & linux</span>
+                        <span class="skill-tag">Machine Learning, Computer Vision</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part-time Work / Freelance -->
+             
+            <!-- Uncomment later -->
+            <!-- <div class="timeline-item">
+                <div class="timeline-marker">
+                    <i class="ri-briefcase-line"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h4 class="timeline-title">Freelance Web Developer</h4>
+                        <span class="timeline-date">2022 - Present</span>
+                    </div>
+                    <p class="timeline-company">Self-employed</p>
+                    <p class="timeline-desc">
+                        Designed and developed responsive websites for small businesses and personal portfolios.
+                        Managed end-to-end project lifecycle from client consultation to deployment.
+                    </p>
+                    <ul class="achievement-list">
+                        <li><i class="ri-check-line"></i> Delivered 5+ projects with 100% client satisfaction</li>
+                        <li><i class="ri-check-line"></i> Implemented SEO best practices improving site visibility</li>
+                        <li><i class="ri-check-line"></i> Integrated payment gateways and CMS solutions</li>
+                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML/CSS/JS</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Relevant Skills & Certifications -->
+            <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="ri-award-line"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4 class="timeline-title">Certifications & Skills</h4>
+                                <span class="timeline-date">Ongoing</span>
+                            </div>
+                            <div class="certs-grid">
+                                <div class="cert-item">
+                                    <i class="ri-medal-line"></i>
+                                    <span>AWS Cloud Practitioner</span>
+                                </div>
+                                <div class="cert-item">
+                                    <i class="ri-medal-line"></i>
+                                    <span>Google Data Analytics</span>
+                                </div>
+                                <div class="cert-item">
+                                    <i class="ri-medal-line"></i>
+                                    <span>Python</span>
+                                </div>
+                            </div>
+                            <p class="timeline-desc" style="margin-top: 1rem;">
+                                Continuously upskilling through online platforms and hands-on projects.
+                                Strong foundation in both hardware prototyping and software development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- Projects Section -->
+        <section class="section portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                <!-- Filter Buttons -->
+                <div class="filter-nav">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter=".iot">IoT</button>
+                    <button class="filter-btn" data-filter=".software">Software</button>
+                    <button class="filter-btn" data-filter=".ai">AI</button>
+                    <button class="filter-btn" data-filter=".others">Others</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    
+                    <!-- IoT Project 1 -->
+                    <div class="project-card mix iot" 
+                    data-title="Anti-Theft Deterrence System" 
+                    data-description="Detects checkout anomalies (barcode obstruction, item-count mismatch) to trigger multi-modal alerts—including touchscreen visuals, audio warnings, and a 12V blinker—while securing privacy-compliant incident logs via ROI blackout." 
+                    data-type="image"
+                    data-images="images/MP_Objectives.png, images/MP_barcodeScenarios.png, images/MP_SystemArchitecture.png, images/MP_GUI.png, images/MP_AI.png, images/MP_OCR.png">
+                        <div class="project-thumb hardware-theme">
+                            <img src="images/MP on site.jpeg">
+                        </div>
+                        <div class="project-info">
+                            <h4>Anti-Theft Deterrence System</h4>
+                            <p>(Major Project) This project enhances an existing AI-based anti-theft deterrence
+                                system deployed at supermarket self-checkout counters</p>
+                            <div class="project-tags">
+                                <span>IoT</span>
+                                <span>AIML</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IoT Project 2 -->
+                    <div class="project-card mix iot" 
+                    data-title="Smart Robot Compost" 
+                    data-description="Redesign of a compost robot control interface, migrating to a React-based frontend hosted on AWS. This scalable solution implements real-time telemetry and remote command execution, replacing a legacy system with a low-latency, responsive dashboard designed for high-availability monitoring." 
+                    data-type="image" 
+                    data-images="images/OSIP_main.png, images/OSIP_graph.png, images/OSIP_readings.png, images/OSIP_general.png, images/OSIP_conditions.png">
+                        <div class="project-thumb hardware-theme">
+                            <img src="images/OSIP_project.jpg">
+                        </div>
+                        <div class="project-info">
+                            <h4>Smart Robot Compost</h4>
+                            <p>Overseas Internship project</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Frontend</span>
+                                <span>IoT</span>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Software Project 1 -->
+                    <div class="project-card mix software" 
+                    data-title="Student Management System" 
+                    data-description="Object Oriented Programming project for school with design mimic Temasek Polytechnic School of Enginer." 
+                    data-type="image" 
+                    data-images="images/OOP_p1.png, images/OOP_p2.png, images/OOP_p3.png, images/OOP_p4.png, images/OOP_p5.png, images/OOP_p6.png, images/OOP_p7.png, images/OOP_p8.png, images/OOP_p9.png,">
+                        <div class="project-thumb software-theme">
+                            <img src="images/OOP_project.png">
+                        </div>
+                        <div class="project-info">
+                            <h4>Student Enrollment System</h4>
+                            <p>Project for OOP module in school</p>
+                            <div class="project-tags">
+                                <span>Java</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Software Project 2 -->
+                    <div class="project-card mix software" 
+                    data-title="Personal Fitness Trainer - FitDash" 
+                    data-description="FitDash enables users to set and track fitness goals, log workouts, monitor water intake, and track macro and food consumption throughout the day."
+                    data-link="https://github.com/Marcuswzh/FitDashMain"
+                    data-type="image" 
+                    data-images="images/Fitdash.png, images/Fitdash_createAcc.png, images/Fitdash_login.png, images/Fitdash_workout.png, images/Fitdash_macros.png, images/Fitdash_designWorkout.png, images/Fitdash_workoutLib.png, images/Fitdash_diet.png, images/Fitdash_exercise.png, images/Fitdash_foodDiary.png, images/Fitdash_Foodlist.png, images/Fitdash_water.png">
+                        <div class="project-thumb vr-theme">
+                            <img src="images/FitDash_logo.jpg">
+                        </div>
+                        <div class="project-info">
+                            <h4>Personal Fitness Trainer App</h4>
+                            <p>Project for Full Stack module in school</p>
+                            <div class="project-tags">
+                                <span>.Net Framework</span>
+                                <span>C#</span>
+                                <span>Frontend</span>
+                                <span>Backend</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI/ML Project 1 -->
+                    <div class="project-card mix ai" 
+                    data-title="Multi Regression model + Image Classification with CNN" 
+                    data-description="Built convolutional neural network using TensorFlow/Keras to classify electronic components. Achieved 92% accuracy on test dataset." 
+                    data-type="image" 
+                    data-images="images/AIML_partAdata.png, images/AIML_eda.png, images/AIML_missingval.png, images/AIML_graphs.png, images/AIML_skew.png, images/AIML_linear.png, images/AIML_polynomial.png, images/AIML_tree.png, images/AIML_partBsplit.png, images/AIML_partBVGG16.png, images/AIML_partBVGGgraph.png, images/AIML_partBVGGtrain.png, images/AIML_partBVGGtest.png">
+                        <div class="project-thumb ai-theme">
+                            <img src="images/AIML_CNN.png">
+                        </div>
+                        <div class="project-info">
+                            <h4>Component Classification CNN</h4>
+                            <p>Project for AIML module in school</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>OpenCV</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI/ML Project 2 -->
+                    <div class="project-card mix ai" 
+                    data-title="Sales Forecasting Dashboard" 
+                    data-description="Time series analysis using ARIMA and LSTM models. Interactive dashboard with Plotly Dash showing predictions, trends, and confidence intervals." 
+                    data-type="image" 
+                    data-src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600">
+                        <div class="project-thumb ai-theme">
+                            <i class="ri-bar-chart-box-line"></i>
+                            <span>AI/ML</span>
+                        </div>
+                        <div class="project-info">
+                            <h4>Sales Forecasting Dashboard</h4>
+                            <p>Predictive analytics with visualization</p>
+                            <div class="project-tags">
+                                <span>Pandas</span>
+                                <span>LSTM</span>
+                                <span>Plotly</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Project 1 -->
+                    <div class="project-card mix others" 
+                    data-title="Smart Home Automation" 
+                    data-description="IoT system controlling lights, fans via mobile app. Used ESP8266, relay modules, Blynk platform. Implemented scheduling and energy monitoring features." 
+                    data-type="image" 
+                    data-src="https://images.unsplash.com/photo-1558002038-1055907df827?w=600">
+                        <div class="project-thumb iot-theme">
+                            <i class="ri-home-wifi-line"></i>
+                            <span>IoT</span>
+                        </div>
+                        <div class="project-info">
+                            <h4>Smart Home Automation</h4>
+                            <p>ESP8266 based home control system</p>
+                            <div class="project-tags">
+                                <span>ESP8266</span>
+                                <span>Blynk</span>
+                                <span>Mobile App</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Project 2 -->
+                    <div class="project-card mix others" 
+                    data-title="Industrial IoT Monitoring" 
+                    data-description="Factory floor monitoring system with vibration and temperature sensors. Real-time alerts via Telegram bot when thresholds exceeded." 
+                    data-type="image" 
+                    data-images="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600">
+                        <div class="project-thumb iot-theme">
+                            <i class="ri-robot-line"></i>
+                            <span>IoT</span>
+                        </div>
+                        <div class="project-info">
+                            <h4>Industrial IoT Monitoring</h4>
+                            <p>Predictive maintenance system</p>
+                            <div class="project-tags">
+                                <span>Node-RED</span>
+                                <span>MQTT</span>
+                                <span>Telegram API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">Contact</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3 class="contact-heading">Let's Build Something Together</h3>
+                        <p class="contact-desc">
+                            Interested in collaborating on engineering projects or discussing 
+                            innovative solutions? I'd love to hear from you.
+                        </p>
+                        
+                        <div class="contact-links">
+                            <a href="Marcus_Wong_Resume.pdf" download="Marcus_Wong_Resume.pdf" class="contact-item">
+                                <i class="ri-file-pdf-line"></i> <div>
+                                    <span class="label">Resume</span>
+                                    <span class="value">Download PDF</span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/marcus-wong-0788242aa/" target="_blank" class="contact-item">
+                                <i class="ri-linkedin-box-line"></i>
+                                <div>
+                                    <span class="label">LinkedIn</span>
+                                    <span class="value">Marcus Wong</span>
+                                </div>
+                            </a>
+                            <a href="https://github.com/Yuutsuuu" target="_blank" class="contact-item">
+                                <i class="ri-github-line"></i>
+                                <div>
+                                    <span class="label">GitHub</span>
+                                    <span class="value">@Yuutsuuu</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="https://formspree.io/f/xpqjooqd" method="POST" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" required placeholder=" ">
+                        <label for="email">Email Address</label>
+                    </div>
+                    
+                    <input type="hidden" name="_subject" value="Let's Connect">
+
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p class="footer-quote">"Engineering is the art of directing the great sources of power in nature for the use and convenience of man."</p>
+                <div class="footer-bottom">
+                    <span>© 2026 Marcus Wong. All rights reserved.</span>
+                    <div class="footer-links">
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+                
+                <div class="modal-main-display">
+                    <video id="modal-video" controls></video>
+                    <img id="modal-image" alt="Project preview">
+                </div>
+
+                <div id="modal-thumbnails" class="modal-thumbnails"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="effect.js"></script>
+</body>
+</html>
