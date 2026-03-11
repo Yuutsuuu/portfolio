@@ -415,10 +415,21 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Change from center */
+    padding-top: 20vh;           /* This lifts the text up towards the top-third of the screen */
     align-items: center;
     text-align: center;
     z-index: 10;
+
+    /* position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding-top: 20vh;           
+    align-items: center;
+    text-align: center;
+    z-index: 10; */
 }
 
 .hero-content {
@@ -462,7 +473,8 @@ a {
 
 .hero-subtitle {
     font-size: 1.1rem;
-    color: var(--muted);
+    color: #000;         /* Change from var(--muted) to pure black */
+    font-weight: 500;    /* Make it slightly bolder */
     margin-bottom: 3rem;
     line-height: 1.8;
     opacity: 0;
@@ -811,6 +823,7 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.5rem;
+    min-height: 500px;
 }
 
 .project-card {
@@ -819,12 +832,14 @@ a {
     overflow: hidden;
     background: var(--light);
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.4s ease, opacity 0.4s ease, box-shadow 0.4s ease;
     cursor: pointer;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.12);
 }
 
