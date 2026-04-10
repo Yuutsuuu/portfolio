@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Start petals after doors open
         setTimeout(createPetals, 1500);
-    }, 4000); // change to 4000 for testing
+    }, 10); // change to 4000 for testing
 
     // ==========================================
     // PETAL ANIMATION
@@ -241,13 +241,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 modalTitle.textContent = title || '';
                 
-                // 1. SET DESCRIPTION + ADD BUTTON IF LINK EXISTS
+                // 1. SET DESCRIPTION + ADD DYNAMIC BUTTON
                 modalDesc.innerHTML = desc || ''; 
+
                 if (githubLink) {
+                    // Check if the link is YouTube
+                    const isYouTube = githubLink.includes('youtube.com') || githubLink.includes('youtu.be');
+                    
+                    // Set dynamic text and icon
+                    const btnText = isYouTube ? 'Watch Video' : 'View Source Code';
+                    const btnIcon = isYouTube ? 'ri-youtube-line' : 'ri-github-line';
+
                     modalDesc.innerHTML += `
                         <div class="modal-action-area">
                             <a href="${githubLink}" target="_blank" class="modal-btn">
-                                <i class="ri-github-line"></i> View Source Code
+                                <i class="${btnIcon}"></i> ${btnText}
                             </a>
                         </div>`;
                 }

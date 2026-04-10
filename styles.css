@@ -415,21 +415,10 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Change from center */
-    padding-top: 20vh;           /* This lifts the text up towards the top-third of the screen */
+    justify-content: center;      
     align-items: center;
     text-align: center;
     z-index: 10;
-
-    /* position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; 
-    padding-top: 20vh;           
-    align-items: center;
-    text-align: center;
-    z-index: 10; */
 }
 
 .hero-content {
