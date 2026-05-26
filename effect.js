@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Start petals after doors open
         setTimeout(createPetals, 1500);
-    }, 4000); // change to 4000 for testing
+    }, 10); // change to 10 for testing
 
     // ==========================================
     // PETAL ANIMATION
@@ -329,5 +329,31 @@ document.addEventListener('DOMContentLoaded', () => {
             // Formspree URL you put in your HTML 'action'.
         });
     }
+
+    // ==========================================
+    // SCROLL REVEAL ENGINE
+    // ==========================================
+    const revealCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // Unobserve so the animation only fires once for a clean look
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const revealOptions = {
+        root: null, // relative to viewport
+        threshold: 0.1, // triggers when 10% of the element is visible
+        rootMargin: "0px 0px -50px 0px" // triggers slightly before it hits the viewport
+    };
+
+    const scrollObserver = new IntersectionObserver(revealCallback, revealOptions);
+
+    // Track all elements you want to animate
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+        scrollObserver.observe(el);
+    });
 
 });

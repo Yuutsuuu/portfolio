@@ -87,7 +87,7 @@
         <!-- About Section -->
         <section class="section about" id="about">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <span class="section-number">01</span>
                     <h2 class="section-title">About</h2>
                     <div class="section-line"></div>
@@ -98,7 +98,7 @@
                         <div class="image-frame">
                             <img src="images/Profile.jpg" alt="Marcus Wong" class="profile-img">
                         </div>
-                </div>
+                    </div>
                     <div class="about-body">
                         <h3 class="about-role">Computer Engineering Student</h3>
                         <div class="about-text">
@@ -114,19 +114,17 @@
             </div>
         </section>
 
-        </section>
-
         <section class="section experience" id="experience">
             
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <span class="section-number">02</span>
                     <h2 class="section-title">Experience</h2>
                     <div class="section-line"></div>
                 </div>
 
                 <div class="timeline">
-                    <div class="timeline-item featured"> <div class="timeline-marker">
+                    <div class="timeline-item featured reveal-on-scroll"> <div class="timeline-marker">
                             <i class="ri-projector-line"></i>
                         </div>
                         <div class="timeline-content">
@@ -153,7 +151,7 @@
                         </div>
                     </div>
 
-                    <div class="timeline-item"> 
+                    <div class="timeline-item reveal-on-scroll"> 
                         <div class="timeline-marker">
                             <i class="ri-plane-line"></i>
                         </div>
@@ -190,10 +188,6 @@
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </section>
-
             <!-- Part-time Work / Freelance -->
              
             <!-- Uncomment later -->
@@ -227,43 +221,55 @@
 
             <!-- Relevant Skills & Certifications -->
              
-            <!-- <div class="timeline-item">
+             <div class="timeline-item reveal-on-scroll">
                         <div class="timeline-marker">
                             <i class="ri-award-line"></i>
                         </div>
                         <div class="timeline-content">
                             <div class="timeline-header">
                                 <h4 class="timeline-title">Certifications & Skills</h4>
-                                <span class="timeline-date">Ongoing</span>
                             </div>
+
                             <div class="certs-grid">
-                                <div class="cert-item">
+                                <a href="2304960D_Skills Transcript.pdf" target="_blank" class="cert-item" id="transcriptBtn" style="cursor: pointer; display: flex; align-items: center; text-decoration: none; color: inherit;">
                                     <i class="ri-medal-line"></i>
-                                    <span>AWS Cloud Practitioner</span>
-                                </div>
-                                <div class="cert-item">
+                                    <span style="display: flex; align-items: center; gap: 0.25rem; font-weight: 500;">
+                                        Skills Transcript by Temasek Polytechnic
+                                        <i class="ri-external-link-line" style="font-size: 0.75rem; opacity: 0.6;"></i>
+                                    </span>
+                                </a>
+
+                                <div class="cert-item project-card" 
+                                    style="cursor: pointer;"
+                                    data-title="Fukuoka Instite of Technology (FIT) Internship Certificate of Completion" 
+                                    data-type="image"
+                                    data-images="fit cert.png">
+                                    
                                     <i class="ri-medal-line"></i>
-                                    <span>Google Data Analytics</span>
+                                    <span style="display: flex; align-items: center; gap: 0.25rem; font-weight: 500;">
+                                        FIT Certificate of Completion
+                                    </span>
                                 </div>
-                                <div class="cert-item">
+
+                                <!-- <div class="cert-item">
                                     <i class="ri-medal-line"></i>
                                     <span>Python</span>
-                                </div>
+                                </div> -->
                             </div>
+                            
                             <p class="timeline-desc" style="margin-top: 1rem;">
                                 Continuously upskilling through online platforms and hands-on projects.
                                 Strong foundation in both hardware prototyping and software development.
                             </p>
-                        </div>
-                    </div> -->
+                    </div>
                 </div>
-            </div>
+            
         </section>
 
        <!-- Projects Section -->
         <section class="section portfolio" id="portfolio">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <span class="section-number">03</span>
                     <h2 class="section-title">Projects</h2>
                     <div class="section-line"></div>
@@ -281,7 +287,7 @@
                 <div class="projects-grid" id="projects-grid">
                     
                     <!-- IoT Project 1 -->
-                    <div class="project-card mix iot" 
+                    <div class="project-card mix iot reveal-on-scroll" 
                     data-title="Anti-Theft Deterrence System" 
                     data-description="Detects checkout anomalies (barcode obstruction, item-count mismatch) to trigger multi-modal alerts—including touchscreen visuals, audio warnings, and a 12V blinker—while securing privacy-compliant incident logs via ROI blackout." 
                     data-type="image"
@@ -301,7 +307,7 @@
                     </div>
 
                     <!-- IoT Project 2 -->
-                    <div class="project-card mix iot" 
+                    <div class="project-card mix iot reveal-on-scroll" 
                     data-title="Smart Robot Compost" 
                     data-description="Redesign of a compost robot control interface, migrating to a React-based frontend hosted on AWS. This scalable solution implements real-time telemetry and remote command execution, replacing a legacy system with a low-latency, responsive dashboard designed for high-availability monitoring." 
                     data-link="https://youtu.be/EGb_1tSygwY?si=Uvd-SZnpOOjufzvJ"
@@ -323,7 +329,7 @@
                     </div>
 
                     <!-- Software Project 1 -->
-                    <div class="project-card mix software" 
+                    <div class="project-card mix software reveal-on-scroll" 
                     data-title="Student Management System" 
                     data-description="Object Oriented Programming project for school with design mimic Temasek Polytechnic School of Enginer." 
                     data-type="image" 
@@ -341,7 +347,7 @@
                     </div>
 
                     <!-- Software Project 2 -->
-                    <div class="project-card mix software" 
+                    <div class="project-card mix software reveal-on-scroll" 
                     data-title="Personal Fitness Trainer - FitDash" 
                     data-description="FitDash enables users to set and track fitness goals, log workouts, monitor water intake, and track macro and food consumption throughout the day."
                     data-link="https://github.com/Marcuswzh/FitDashMain"
@@ -363,7 +369,7 @@
                     </div>
 
                     <!-- AI/ML Project 1 -->
-                    <div class="project-card mix ai" 
+                    <div class="project-card mix ai reveal-on-scroll" 
                     data-title="Multi Regression model + Image Classification with CNN" 
                     data-description="Built convolutional neural network using TensorFlow/Keras to classify electronic components. Achieved 92% accuracy on test dataset." 
                     data-type="image" 
@@ -383,7 +389,7 @@
                     </div>
 
                     <!-- AI/ML Project 2 -->
-                    <!-- <div class="project-card mix ai" 
+                    <!-- <div class="project-card mix ai reveal-on-scroll" 
                     data-title="Sales Forecasting Dashboard" 
                     data-description="Time series analysis using ARIMA and LSTM models. Interactive dashboard with Plotly Dash showing predictions, trends, and confidence intervals." 
                     data-type="image" 
@@ -425,7 +431,7 @@
                     </div> -->
 
                     <!-- Other Project 2 -->
-                    <!-- <div class="project-card mix others" 
+                    <!-- <div class="project-card mix others reveal-on-scroll" 
                     data-title="Industrial IoT Monitoring" 
                     data-description="Factory floor monitoring system with vibration and temperature sensors. Real-time alerts via Telegram bot when thresholds exceeded." 
                     data-type="image" 
@@ -452,7 +458,7 @@
         <!-- Contact Section -->
         <section class="section contact" id="contact">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <span class="section-number">04</span>
                     <h2 class="section-title">Contact</h2>
                     <div class="section-line"></div>
