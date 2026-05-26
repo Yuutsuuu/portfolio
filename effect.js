@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Start petals after doors open
         setTimeout(createPetals, 1500);
-    }, 10); // change to 10 for testing
+    }, 4000); // change to 10 for testing
 
     // ==========================================
     // PETAL ANIMATION

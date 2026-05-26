@@ -53,10 +53,10 @@ a {
    LOADING SCREEN
    ============================================ */
 /* Uncomment this code below for modifying code */
-.loading-container,
+/* .loading-container,
 .shoji-door-container { 
     display: none !important;
-}
+} */
 
 .loading-container {
     position: fixed;
